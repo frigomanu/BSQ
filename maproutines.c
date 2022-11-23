@@ -6,7 +6,7 @@
 /*   By: momil-vo <momil-vo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 23:25:57 by momil-vo          #+#    #+#             */
-/*   Updated: 2022/11/23 00:53:40 by momil-vo         ###   ########.fr       */
+/*   Updated: 2022/11/23 04:34:22 by momil-vo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,8 @@ void	map_cicle_aux(char **lines, int *size)
 	}
 	get_symbols(lines[0], symbols);
 	swap(map, size, symbols, 0);
-	solve(map, size);
+	if (solve(map, size))
+		return ;
 	swap(map, size, symbols, 1);
 	print_lines(map, size[0]);
 	free(map);

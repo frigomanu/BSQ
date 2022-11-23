@@ -6,21 +6,24 @@
 /*   By: momil-vo <momil-vo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 00:10:01 by momil-vo          #+#    #+#             */
-/*   Updated: 2022/11/23 00:53:51 by momil-vo         ###   ########.fr       */
+/*   Updated: 2022/11/23 04:33:09 by momil-vo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 
-void	solve(char **map, int *sz)
+int	solve(char **map, int *sz)
 {
 	int	sol[3];
 
 	find_sol(map, sz, sol);
 	if (sol[0] <= 0)
+	{
 		write(1, "error NO SOLUTION\n", 18);
-	else
-		drawsq(map, sol);
+		return (1);
+	}
+	drawsq(map, sol);
+	return (0);
 }
 
 //finds the largest square fitting in map

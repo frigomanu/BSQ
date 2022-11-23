@@ -6,7 +6,7 @@
 /*   By: momil-vo <momil-vo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 23:59:04 by amejia            #+#    #+#             */
-/*   Updated: 2022/11/23 00:39:04 by momil-vo         ###   ########.fr       */
+/*   Updated: 2022/11/23 04:39:28 by momil-vo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	map_cicle(char *file_content);
 void	map_cicle_from_file(char *path);
 void	append_nlines(char *bigstr, int nlines, int *nchars);
 char	*std_in_to_str(void);
-void	solve(char **map, int *sz);
+int		solve(char **map, int *sz);
 void	find_sol(char **map, int *sz, int *sol);
 void	update(char **map, int *sz, int *pos, int *sol);
 int		check(char **map, int num, int y, int x);

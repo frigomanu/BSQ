@@ -6,7 +6,7 @@
 #    By: momil-vo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/22 13:00:51 by momil-vo          #+#    #+#              #
-#    Updated: 2022/11/23 02:08:21 by momil-vo         ###   ########.fr        #
+#    Updated: 2022/11/23 04:39:00 by momil-vo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,6 @@ clean:
 fclean: clean
 	@rm -f $(NAME)
 
-re: fclean alldd
+re: fclean all
 
 .PHONY: all clean fclean re exec run
